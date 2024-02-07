@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+<!--dynamic fragments-->
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFragA"
+        android:layout_weight="1"
+        android:text="Frag A"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFragB"
+        android:layout_weight="1"
+        android:text="Frag B"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFragC"
+        android:layout_weight="1"
+        android:text="Frag C"
+
+        />
+
+
+
+
+
+
+  </LinearLayout>
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/Container"/>
+
+
+  <!--
+  this is for static fragments i.e, fragments are fixed and we can make them function independently
+
+  <fragment
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:name="com.example.fragments.AFragment"
+      android:id="@+id/Frag1"/>
+
+    &lt;!&ndash;if screen to be divided into 2 equal parts then give the weight 1 to each
+    u can give any ratio like 2:3&ndash;&gt;
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:name="com.example.fragments.BFragment"
+        android:id="@+id/Frag2"/>
+
+        -->
+
+</LinearLayout>
